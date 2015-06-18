@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="biography$sources_javadoc_2.11"
+		revision="1.0"
+		conf="test"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20150616221857"/>
+	<dependencies>
+		<module organisation="edu.arizona.sista" name="processors_2.11">
+			<revision name="5.2" status="release" pubdate="20150325145145" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/sistanlp/processors" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="no" details="" size="5685" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/edu.arizona.sista/processors_2.11/ivy-5.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/edu/arizona/sista/processors_2.11/5.2/processors_2.11-5.2.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="5.2" rev-constraint-default="5.2" rev-constraint-dynamic="5.2" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="processors_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="3031312" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/edu.arizona.sista/processors_2.11/docs/processors_2.11-5.2-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/edu/arizona/sista/processors_2.11/5.2/processors_2.11-5.2-javadoc.jar"/>
+					</artifact>
+					<artifact name="processors_2.11" type="jar" ext="jar" status="no" details="" size="2805160" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/edu.arizona.sista/processors_2.11/jars/processors_2.11-5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/edu/arizona/sista/processors_2.11/5.2/processors_2.11-5.2.jar"/>
+					</artifact>
+					<artifact name="processors_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="794225" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/edu.arizona.sista/processors_2.11/srcs/processors_2.11-5.2-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/edu/arizona/sista/processors_2.11/5.2/processors_2.11-5.2-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jline" name="jline">
+			<revision name="2.12" status="release" pubdate="20140606172408" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="31">
+				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="3755" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/jline/jline/ivy-2.12.xml" searched="false" origin-is-local="false" origin-location="file:/Users/spandanbrahmbhatt/Downloads/activator-1.3.0/repository/jline/jline/2.12/ivys/ivy.xml"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.12" rev-constraint-default="2.12" rev-constraint-dynamic="2.12" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jline" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="327683" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/jline/jline/docs/jline-2.12-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/jline/jline/2.12/jline-2.12-javadoc.jar"/>
+					</artifact>
+					<artifact name="jline" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="89671" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/jline/jline/srcs/jline-2.12-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/jline/jline/2.12/jline-2.12-sources.jar"/>
+					</artifact>
+					<artifact name="jline" type="jar" ext="jar" status="no" details="" size="213854" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/jline/jline/jars/jline-2.12.jar">
+						<origin-location is-local="false" location="file:/Users/spandanbrahmbhatt/Downloads/activator-1.3.0/repository/jline/jline/2.12/jars/jline.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.yaml" name="snakeyaml">
+			<revision name="1.14" status="release" pubdate="20140829091353" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.snakeyaml.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="30">
+				<license name="Apache License Version 2.0" url="LICENSE.txt"/>
+				<metadata-artifact status="no" details="" size="3434" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.yaml/snakeyaml/ivy-1.14.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.14/snakeyaml-1.14.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.14" rev-constraint-default="1.14" rev-constraint-dynamic="1.14" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="snakeyaml" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="788286" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.yaml/snakeyaml/docs/snakeyaml-1.14-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.14/snakeyaml-1.14-javadoc.jar"/>
+					</artifact>
+					<artifact name="snakeyaml" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="173980" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.yaml/snakeyaml/srcs/snakeyaml-1.14-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.14/snakeyaml-1.14-sources.jar"/>
+					</artifact>
+					<artifact name="snakeyaml" type="jar" ext="jar" status="no" details="" size="275115" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.yaml/snakeyaml/jars/snakeyaml-1.14.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/yaml/snakeyaml/1.14/snakeyaml-1.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="tw.edu.ntu.csie" name="libsvm">
+			<revision name="3.17" status="release" pubdate="20130819174252" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.csie.ntu.edu.tw/~cjlin/libsvm/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="29">
+				<license name="BSD 3-Clause License" url="http://www.csie.ntu.edu.tw/~cjlin/libsvm/COPYRIGHT"/>
+				<metadata-artifact status="no" details="" size="2601" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/tw.edu.ntu.csie/libsvm/ivy-3.17.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/tw/edu/ntu/csie/libsvm/3.17/libsvm-3.17.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.17" rev-constraint-default="3.17" rev-constraint-dynamic="3.17" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="libsvm" type="jar" ext="jar" status="no" details="" size="61338" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/tw.edu.ntu.csie/libsvm/jars/libsvm-3.17.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/tw/edu/ntu/csie/libsvm/3.17/libsvm-3.17.jar"/>
+					</artifact>
+					<artifact name="libsvm" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="91771" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/tw.edu.ntu.csie/libsvm/srcs/libsvm-3.17-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/tw/edu/ntu/csie/libsvm/3.17/libsvm-3.17-sources.jar"/>
+					</artifact>
+					<artifact name="libsvm" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="78392" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/tw.edu.ntu.csie/libsvm/docs/libsvm-3.17-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/tw/edu/ntu/csie/libsvm/3.17/libsvm-3.17-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="log4j" name="log4j">
+			<revision name="1.2.17" status="release" pubdate="20120526054339" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logging.apache.org/log4j/1.2/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="28">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3544" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/log4j/log4j/ivy-1.2.17.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.2.17" rev-constraint-default="1.2.17" rev-constraint-dynamic="1.2.17" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="log4j" type="jar" ext="jar" status="no" details="" size="489884" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/log4j/log4j/jars/log4j-1.2.17.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17.jar"/>
+					</artifact>
+					<artifact name="log4j" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1491397" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/log4j/log4j/docs/log4j-1.2.17-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17-javadoc.jar"/>
+					</artifact>
+					<artifact name="log4j" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="481200" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/log4j/log4j/srcs/log4j-1.2.17-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/log4j/log4j/1.2.17/log4j-1.2.17-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="de.bwaldvogel" name="liblinear">
+			<revision name="1.94" status="release" pubdate="20131114171909" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.bwaldvogel.de/liblinear-java/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="27">
+				<license name="The BSD License" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="no" details="" size="3556" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/de.bwaldvogel/liblinear/ivy-1.94.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/de/bwaldvogel/liblinear/1.94/liblinear-1.94.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.94" rev-constraint-default="1.94" rev-constraint-dynamic="1.94" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="liblinear" type="jar" ext="jar" status="no" details="" size="60385" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/de.bwaldvogel/liblinear/jars/liblinear-1.94.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/de/bwaldvogel/liblinear/1.94/liblinear-1.94.jar"/>
+					</artifact>
+					<artifact name="liblinear" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="34056" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/de.bwaldvogel/liblinear/srcs/liblinear-1.94-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/de/bwaldvogel/liblinear/1.94/liblinear-1.94-sources.jar"/>
+					</artifact>
+					<artifact name="liblinear" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="85867" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/de.bwaldvogel/liblinear/docs/liblinear-1.94-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/de/bwaldvogel/liblinear/1.94/liblinear-1.94-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.jopt-simple" name="jopt-simple">
+			<revision name="4.5" status="release" pubdate="20130601150649" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://pholser.github.com/jopt-simple" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="26">
+				<license name="The MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="3719" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/net.sf.jopt-simple/jopt-simple/ivy-4.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/4.5/jopt-simple-4.5.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="4.5" rev-constraint-default="4.5" rev-constraint-dynamic="4.5" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jopt-simple" type="jar" ext="jar" status="no" details="" size="61311" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/net.sf.jopt-simple/jopt-simple/jars/jopt-simple-4.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/4.5/jopt-simple-4.5.jar"/>
+					</artifact>
+					<artifact name="jopt-simple" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="73276" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/net.sf.jopt-simple/jopt-simple/srcs/jopt-simple-4.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/4.5/jopt-simple-4.5-sources.jar"/>
+					</artifact>
+					<artifact name="jopt-simple" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="164024" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/net.sf.jopt-simple/jopt-simple/docs/jopt-simple-4.5-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/jopt-simple/jopt-simple/4.5/jopt-simple-4.5-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="nz.ac.waikato.cms.weka" name="weka-dev">
+			<revision name="3.7.10" status="release" pubdate="20130731014100" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.cms.waikato.ac.nz/ml/weka/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="23">
+				<license name="GNU General Public License 3" url="http://www.gnu.org/licenses/gpl-3.0.txt"/>
+				<metadata-artifact status="no" details="" size="3864" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/nz.ac.waikato.cms.weka/weka-dev/ivy-3.7.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/nz/ac/waikato/cms/weka/weka-dev/3.7.10/weka-dev-3.7.10.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.7.10" rev-constraint-default="3.7.10" rev-constraint-dynamic="3.7.10" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="weka-dev" type="jar" ext="jar" status="no" details="" size="6859172" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/nz.ac.waikato.cms.weka/weka-dev/jars/weka-dev-3.7.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/nz/ac/waikato/cms/weka/weka-dev/3.7.10/weka-dev-3.7.10.jar"/>
+					</artifact>
+					<artifact name="weka-dev" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="9193629" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/nz.ac.waikato.cms.weka/weka-dev/docs/weka-dev-3.7.10-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/nz/ac/waikato/cms/weka/weka-dev/3.7.10/weka-dev-3.7.10-javadoc.jar"/>
+					</artifact>
+					<artifact name="weka-dev" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="5370977" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/nz.ac.waikato.cms.weka/weka-dev/srcs/weka-dev-3.7.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/nz/ac/waikato/cms/weka/weka-dev/3.7.10/weka-dev-3.7.10-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.pentaho.pentaho-commons" name="pentaho-package-manager">
+			<revision name="1.0.8" status="release" pubdate="20130412003705" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://source.pentaho.org/svnroot/pentaho-commons/pentaho-package-manager/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="25">
+				<license name="GNU Lesser General Public License 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.txt"/>
+				<metadata-artifact status="no" details="" size="3269" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.pentaho.pentaho-commons/pentaho-package-manager/ivy-1.0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/pentaho/pentaho-commons/pentaho-package-manager/1.0.8/pentaho-package-manager-1.0.8.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.0.8" rev-constraint-default="1.0.8" rev-constraint-dynamic="1.0.8" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="pentaho-package-manager" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="120181" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.pentaho.pentaho-commons/pentaho-package-manager/docs/pentaho-package-manager-1.0.8-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/pentaho/pentaho-commons/pentaho-package-manager/1.0.8/pentaho-package-manager-1.0.8-javadoc.jar"/>
+					</artifact>
+					<artifact name="pentaho-package-manager" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="41524" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.pentaho.pentaho-commons/pentaho-package-manager/srcs/pentaho-package-manager-1.0.8-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/pentaho/pentaho-commons/pentaho-package-manager/1.0.8/pentaho-package-manager-1.0.8-sources.jar"/>
+					</artifact>
+					<artifact name="pentaho-package-manager" type="jar" ext="jar" status="no" details="" size="49987" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.pentaho.pentaho-commons/pentaho-package-manager/jars/pentaho-package-manager-1.0.8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/pentaho/pentaho-commons/pentaho-package-manager/1.0.8/pentaho-package-manager-1.0.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf.squirrel-sql.thirdparty-non-maven" name="java-cup">
+			<revision name="0.11a" status="release" pubdate="20091010083158" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www2.cs.tum.edu/projects/cup/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="24">
+				<license name="CUP Parser Generator Copyright Notice, License, and Disclaimer" url="http://www.smlnj.org//license.html"/>
+				<metadata-artifact status="no" details="" size="2738" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/net.sf.squirrel-sql.thirdparty-non-maven/java-cup/ivy-0.11a.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/net/sf/squirrel-sql/thirdparty-non-maven/java-cup/0.11a/java-cup-0.11a.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="0.11a" rev-constraint-default="0.11a" rev-constraint-dynamic="0.11a" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="java-cup" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="324558" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/net.sf.squirrel-sql.thirdparty-non-maven/java-cup/srcs/java-cup-0.11a-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/squirrel-sql/thirdparty-non-maven/java-cup/0.11a/java-cup-0.11a-sources.jar"/>
+					</artifact>
+					<artifact name="java-cup" type="jar" ext="jar" status="no" details="" size="96121" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/net.sf.squirrel-sql.thirdparty-non-maven/java-cup/jars/java-cup-0.11a.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/net/sf/squirrel-sql/thirdparty-non-maven/java-cup/0.11a/java-cup-0.11a.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.10" status="release" pubdate="20150106151107" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="22">
+				<metadata-artifact status="no" details="" size="4667" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.slf4j/slf4j-api/ivy-1.7.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.7.10" rev-constraint-default="1.7.10" rev-constraint-dynamic="1.7.10" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="50644" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.slf4j/slf4j-api/srcs/slf4j-api-1.7.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10-sources.jar"/>
+					</artifact>
+					<artifact name="slf4j-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="211222" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.slf4j/slf4j-api/docs/slf4j-api-1.7.10-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10-javadoc.jar"/>
+					</artifact>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="32119" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-api/1.7.10/slf4j-api-1.7.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-classic">
+			<revision name="1.0.10" status="release" pubdate="20130315131355" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="20">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="10232" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.0.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.10/logback-classic-1.0.10.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.0.10" rev-constraint-default="1.0.10" rev-constraint-dynamic="1.0.10" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="logback-classic" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="946582" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/ch.qos.logback/logback-classic/docs/logback-classic-1.0.10-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.10/logback-classic-1.0.10-javadoc.jar"/>
+					</artifact>
+					<artifact name="logback-classic" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="204125" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/ch.qos.logback/logback-classic/srcs/logback-classic-1.0.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.10/logback-classic-1.0.10-sources.jar"/>
+					</artifact>
+					<artifact name="logback-classic" type="jar" ext="jar" status="no" details="" size="255445" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-classic/1.0.10/logback-classic-1.0.10.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="ch.qos.logback" name="logback-core">
+			<revision name="1.0.10" status="release" pubdate="20130315131312" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://logback.qos.ch" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="21">
+				<license name="Eclipse Public License - v 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<license name="GNU Lesser General Public License" url="http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="9556" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.0.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.10/logback-core-1.0.10.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.0.10" rev-constraint-default="1.0.10" rev-constraint-dynamic="1.0.10" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="logback-core" type="jar" ext="jar" status="no" details="" size="366854" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.10/logback-core-1.0.10.jar"/>
+					</artifact>
+					<artifact name="logback-core" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="307688" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/ch.qos.logback/logback-core/srcs/logback-core-1.0.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.10/logback-core-1.0.10-sources.jar"/>
+					</artifact>
+					<artifact name="logback-core" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1590270" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/ch.qos.logback/logback-core/docs/logback-core-1.0.10-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/ch/qos/logback/logback-core/1.0.10/logback-core-1.0.10-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="edu.stanford.nlp" name="stanford-corenlp">
+			<revision name="3.5.1" status="release" pubdate="20150209150257" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://nlp.stanford.edu/software/corenlp.shtml" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="18">
+				<license name="GNU General Public License Version 3" url="http://www.gnu.org/licenses/gpl-3.0.txt"/>
+				<metadata-artifact status="no" details="" size="3933" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/ivy-3.5.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.5.1/stanford-corenlp-3.5.1.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.5.1" rev-constraint-default="3.5.1" rev-constraint-dynamic="3.5.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="stanford-corenlp" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3972998" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/srcs/stanford-corenlp-3.5.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.5.1/stanford-corenlp-3.5.1-sources.jar"/>
+					</artifact>
+					<artifact name="stanford-corenlp" type="jar" ext="jar" status="no" details="" size="6003017" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/jars/stanford-corenlp-3.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.5.1/stanford-corenlp-3.5.1.jar"/>
+					</artifact>
+					<artifact name="stanford-corenlp" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="7797532" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/edu.stanford.nlp/stanford-corenlp/docs/stanford-corenlp-3.5.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/edu/stanford/nlp/stanford-corenlp/3.5.1/stanford-corenlp-3.5.1-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.json" name="javax.json-api">
+			<revision name="1.0" status="release" pubdate="20130424172157" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://json-processing-spec.java.net" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="19">
+				<metadata-artifact status="no" details="" size="4802" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/javax.json/javax.json-api/ivy-1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/json/javax.json-api/1.0/javax.json-api-1.0.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="javax.json-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="200783" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/javax.json/javax.json-api/docs/javax.json-api-1.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/json/javax.json-api/1.0/javax.json-api-1.0-javadoc.jar"/>
+					</artifact>
+					<artifact name="javax.json-api" type="jar" ext="jar" status="no" details="" size="19754" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/javax.json/javax.json-api/jars/javax.json-api-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/json/javax.json-api/1.0/javax.json-api-1.0.jar"/>
+					</artifact>
+					<artifact name="javax.json-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="54860" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/javax.json/javax.json-api/srcs/javax.json-api-1.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/json/javax.json-api/1.0/javax.json-api-1.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.efficient-java-matrix-library" name="ejml">
+			<revision name="0.23" status="release" pubdate="20130621121625" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://code.google.com/p/efficient-java-matrix-library/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+				<license name="LGPL" url="http://www.gnu.org/copyleft/lesser.html"/>
+				<metadata-artifact status="no" details="" size="3179" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/ivy-0.23.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="0.23" rev-constraint-default="0.23" rev-constraint-dynamic="0.23" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="ejml" type="jar" ext="jar" status="no" details="" size="301506" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/jars/ejml-0.23.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23.jar"/>
+					</artifact>
+					<artifact name="ejml" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1067457" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/docs/ejml-0.23-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23-javadoc.jar"/>
+					</artifact>
+					<artifact name="ejml" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="315418" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/com.googlecode.efficient-java-matrix-library/ejml/srcs/ejml-0.23-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/efficient-java-matrix-library/ejml/0.23/ejml-0.23-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="de.jollyday" name="jollyday">
+			<revision name="0.4.7" status="release" pubdate="20121104190012" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://sourceforge.net/projects/jollyday" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="4129" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/de.jollyday/jollyday/ivy-0.4.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="0.4.7" rev-constraint-default="0.4.7" rev-constraint-dynamic="0.4.7" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jollyday" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="392821" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/de.jollyday/jollyday/docs/jollyday-0.4.7-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7-javadoc.jar"/>
+					</artifact>
+					<artifact name="jollyday" type="jar" ext="jar" status="no" details="" size="200993" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/de.jollyday/jollyday/jars/jollyday-0.4.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7.jar"/>
+					</artifact>
+					<artifact name="jollyday" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="186534" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/de.jollyday/jollyday/srcs/jollyday-0.4.7-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/de/jollyday/jollyday/0.4.7/jollyday-0.4.7-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.xml.bind" name="jaxb-api">
+			<revision name="2.2.7" status="release" pubdate="20120524053721" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jaxb.java.net/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+				<license name="CDDL 1.1" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<license name="GPL2 w/ CPE" url="https://glassfish.java.net/public/CDDL+GPL_1_1.html"/>
+				<metadata-artifact status="no" details="" size="3149" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/javax.xml.bind/jaxb-api/ivy-2.2.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.2.7" rev-constraint-default="2.2.7" rev-constraint-dynamic="2.2.7" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jaxb-api" type="jar" ext="jar" status="no" details="" size="100146" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/javax.xml.bind/jaxb-api/jars/jaxb-api-2.2.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7.jar"/>
+					</artifact>
+					<artifact name="jaxb-api" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="244681" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/javax.xml.bind/jaxb-api/srcs/jaxb-api-2.2.7-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7-sources.jar"/>
+					</artifact>
+					<artifact name="jaxb-api" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="420071" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/javax.xml.bind/jaxb-api/docs/jaxb-api-2.2.7-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/xml/bind/jaxb-api/2.2.7/jaxb-api-2.2.7-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.7" status="release" pubdate="20150111195125" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="14">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="6460" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/joda-time/joda-time/ivy-2.7.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.7" rev-constraint-default="2.7" rev-constraint-dynamic="2.7" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="589289" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.jar"/>
+					</artifact>
+					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="753961" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.7-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.7/joda-time-2.7-sources.jar"/>
+					</artifact>
+					<artifact name="joda-time" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1309080" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/joda-time/joda-time/docs/joda-time-2.7-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.7/joda-time-2.7-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-native_2.11">
+			<revision name="3.2.11" status="release" pubdate="20141023211049" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="7">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2677" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.json4s/json4s-native_2.11/ivy-3.2.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-native_2.11/3.2.11/json4s-native_2.11-3.2.11.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.11" rev-constraint-default="3.2.11" rev-constraint-dynamic="3.2.11" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json4s-native_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="427942" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.json4s/json4s-native_2.11/docs/json4s-native_2.11-3.2.11-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-native_2.11/3.2.11/json4s-native_2.11-3.2.11-javadoc.jar"/>
+					</artifact>
+					<artifact name="json4s-native_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7423" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.json4s/json4s-native_2.11/srcs/json4s-native_2.11-3.2.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-native_2.11/3.2.11/json4s-native_2.11-3.2.11-sources.jar"/>
+					</artifact>
+					<artifact name="json4s-native_2.11" type="jar" ext="jar" status="no" details="" size="67829" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.json4s/json4s-native_2.11/jars/json4s-native_2.11-3.2.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-native_2.11/3.2.11/json4s-native_2.11-3.2.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-core_2.11">
+			<revision name="3.2.11" status="release" pubdate="20141023211034" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2962" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.json4s/json4s-core_2.11/ivy-3.2.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.11" rev-constraint-default="3.2.11" rev-constraint-dynamic="3.2.11" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json4s-core_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="39377" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.json4s/json4s-core_2.11/srcs/json4s-core_2.11-3.2.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11-sources.jar"/>
+					</artifact>
+					<artifact name="json4s-core_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="698009" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.json4s/json4s-core_2.11/docs/json4s-core_2.11-3.2.11-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11-javadoc.jar"/>
+					</artifact>
+					<artifact name="json4s-core_2.11" type="jar" ext="jar" status="no" details="" size="589462" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.json4s/json4s-core_2.11/jars/json4s-core_2.11-3.2.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scalap">
+			<revision name="2.11.0" status="release" pubdate="20140416051427" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2514" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scalap/ivy-2.11.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.11.0/scalap-2.11.0.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scalap" type="jar" ext="jar" status="no" details="" size="771622" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.11.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.11.0/scalap-2.11.0.jar"/>
+					</artifact>
+					<artifact name="scalap" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="36634" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scalap/srcs/scalap-2.11.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.11.0/scalap-2.11.0-sources.jar"/>
+					</artifact>
+					<artifact name="scalap" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="994878" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scalap/docs/scalap-2.11.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scalap/2.11.0/scalap-2.11.0-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.11.0" status="release" pubdate="20140416051405" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="12">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="3131" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scala-compiler/ivy-2.11.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.0/scala-compiler-2.11.0.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.11.0" rev-constraint-default="2.11.0" rev-constraint-dynamic="2.11.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="13655547" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.11.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.0/scala-compiler-2.11.0.jar"/>
+					</artifact>
+					<artifact name="scala-compiler" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="2077837" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scala-compiler/srcs/scala-compiler-2.11.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.0/scala-compiler-2.11.0-sources.jar"/>
+					</artifact>
+					<artifact name="scala-compiler" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="8696006" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scala-compiler/docs/scala-compiler-2.11.0-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.0/scala-compiler-2.11.0-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.11">
+			<revision name="1.0.1" status="release" pubdate="20140416052108" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2976" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/ivy-1.0.1.xml" searched="false" origin-is-local="false" origin-location="file:/Users/spandanbrahmbhatt/Downloads/activator-1.3.0/repository/org.scala-lang.modules/scala-xml_2.11/1.0.1/ivys/ivy.xml"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-xml_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="1153655" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/docs/scala-xml_2.11-1.0.1-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-xml_2.11" type="jar" ext="jar" status="no" details="" size="655685" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/jars/scala-xml_2.11-1.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1.jar"/>
+					</artifact>
+					<artifact name="scala-xml_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="109171" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/srcs/scala-xml_2.11-1.0.1-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.1/scala-xml_2.11-1.0.1-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.thoughtworks.paranamer" name="paranamer">
+			<revision name="2.6" status="release" pubdate="20131008235654" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="10">
+				<metadata-artifact status="no" details="" size="4124" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/com.thoughtworks.paranamer/paranamer/ivy-2.6.xml" searched="false" origin-is-local="false" origin-location="file:/Users/spandanbrahmbhatt/Downloads/activator-1.3.0/repository/com.thoughtworks.paranamer/paranamer/2.6/ivys/ivy.xml"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.6" rev-constraint-default="2.6" rev-constraint-dynamic="2.6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="paranamer" type="jar" ext="jar" status="no" details="" size="32806" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.6.jar">
+						<origin-location is-local="false" location="file:/Users/spandanbrahmbhatt/Downloads/activator-1.3.0/repository/com.thoughtworks.paranamer/paranamer/2.6/jars/paranamer.jar"/>
+					</artifact>
+					<artifact name="paranamer" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="26517" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/com.thoughtworks.paranamer/paranamer/srcs/paranamer-2.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6-sources.jar"/>
+					</artifact>
+					<artifact name="paranamer" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="90529" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/com.thoughtworks.paranamer/paranamer/docs/paranamer-2.6-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/thoughtworks/paranamer/paranamer/2.6/paranamer-2.6-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json4s" name="json4s-ast_2.11">
+			<revision name="3.2.11" status="release" pubdate="20141023211004" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/json4s/json4s" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
+				<license name="ASL" url="http://github.com/json4s/json4s/raw/HEAD/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2522" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.json4s/json4s-ast_2.11/ivy-3.2.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="3.2.11" rev-constraint-default="3.2.11" rev-constraint-dynamic="3.2.11" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="json4s-ast_2.11" type="jar" ext="jar" status="no" details="" size="82421" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.json4s/json4s-ast_2.11/jars/json4s-ast_2.11-3.2.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11.jar"/>
+					</artifact>
+					<artifact name="json4s-ast_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="7279" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.json4s/json4s-ast_2.11/srcs/json4s-ast_2.11-3.2.11-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11-sources.jar"/>
+					</artifact>
+					<artifact name="json4s-ast_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="454144" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.json4s/json4s-ast_2.11/docs/json4s-ast_2.11-3.2.11-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.io7m.xom" name="xom">
+			<revision name="1.2.10" status="release" pubdate="20131025121622" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xom.nu" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<license name="The GNU Lesser General Public License, Version 2.1" url="http://www.gnu.org/licenses/lgpl-2.1.html"/>
+				<metadata-artifact status="no" details="" size="2899" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/com.io7m.xom/xom/ivy-1.2.10.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/io7m/xom/xom/1.2.10/xom-1.2.10.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.2.10" rev-constraint-default="1.2.10" rev-constraint-dynamic="1.2.10" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="xom" type="jar" ext="jar" status="no" details="" size="313253" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/com.io7m.xom/xom/jars/xom-1.2.10.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/io7m/xom/xom/1.2.10/xom-1.2.10.jar"/>
+					</artifact>
+					<artifact name="xom" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="660102" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/com.io7m.xom/xom/srcs/xom-1.2.10-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/io7m/xom/xom/1.2.10/xom-1.2.10-sources.jar"/>
+					</artifact>
+					<artifact name="xom" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="462662" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/com.io7m.xom/xom/docs/xom-1.2.10-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/io7m/xom/xom/1.2.10/xom-1.2.10-javadoc.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xalan" name="xalan">
+			<revision name="2.7.0" status="release" pubdate="20140131101554" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+				<metadata-artifact status="no" details="" size="2460" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/xalan/xalan/ivy-2.7.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xalan/xalan/2.7.0/xalan-2.7.0.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.7.0" rev-constraint-default="2.7.0" rev-constraint-dynamic="2.7.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="xalan" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="3137807" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/xalan/xalan/srcs/xalan-2.7.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xalan/xalan/2.7.0/xalan-2.7.0-sources.jar"/>
+					</artifact>
+					<artifact name="xalan" type="jar" ext="jar" status="no" details="" size="2730442" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/xalan/xalan/jars/xalan-2.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xalan/xalan/2.7.0/xalan-2.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="xerces" name="xercesImpl">
+			<revision name="2.8.0" status="release" pubdate="20060512163229" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://xerces.apache.org/xerces2-j" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<metadata-artifact status="no" details="" size="2841" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/xerces/xercesImpl/ivy-2.8.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.8.0" rev-constraint-default="2.8.0" rev-constraint-dynamic="2.8.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="xercesImpl" type="jar" ext="jar" status="no" details="" size="1207073" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/xerces/xercesImpl/jars/xercesImpl-2.8.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0.jar"/>
+					</artifact>
+					<artifact name="xercesImpl" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="1875691" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/xerces/xercesImpl/srcs/xercesImpl-2.8.0-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/xerces/xercesImpl/2.8.0/xercesImpl-2.8.0-sources.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-parser-combinators_2.11">
+			<revision name="1.0.3" status="release" pubdate="20141214192104" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="3">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="2792" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/ivy-1.0.3.xml" searched="false" origin-is-local="false" origin-location="file:/Users/spandanbrahmbhatt/Downloads/activator-1.3.0/repository/org.scala-lang.modules/scala-parser-combinators_2.11/1.0.3/ivys/ivy.xml"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-parser-combinators_2.11" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="693395" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/docs/scala-parser-combinators_2.11-1.0.3-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.3/scala-parser-combinators_2.11-1.0.3-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-parser-combinators_2.11" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="42156" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/srcs/scala-parser-combinators_2.11-1.0.3-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.3/scala-parser-combinators_2.11-1.0.3-sources.jar"/>
+					</artifact>
+					<artifact name="scala-parser-combinators_2.11" type="jar" ext="jar" status="no" details="" size="415523" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/jars/scala-parser-combinators_2.11-1.0.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.3/scala-parser-combinators_2.11-1.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.5" status="release" pubdate="20150106193224" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.5/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2812" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scala-reflect/ivy-2.11.5.xml" searched="false" origin-is-local="false" origin-location="file:/Users/spandanbrahmbhatt/Downloads/activator-1.3.0/repository/org.scala-lang/scala-reflect/2.11.5/ivys/ivy.xml"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.11.5" rev-constraint-default="2.11.5" rev-constraint-dynamic="2.11.5" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.5/"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="560509" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scala-reflect/srcs/scala-reflect-2.11.5-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.5/scala-reflect-2.11.5-sources.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="4406081" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scala-reflect/docs/scala-reflect-2.11.5-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.5/scala-reflect-2.11.5-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4454732" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.11.5.jar">
+						<origin-location is-local="false" location="file:/Users/spandanbrahmbhatt/Downloads/activator-1.3.0/repository/org.scala-lang/scala-reflect/2.11.5/jars/scala-reflect.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.6" status="release" pubdate="20150225200105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.6/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.pom"/>
+				<caller organisation="default" name="biography$sources_javadoc_2.11" conf="test, compile, runtime" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0" extra-info.apiURL="http://www.scala-lang.org/api/2.11.6/"/>
+				<artifacts>
+					<artifact name="scala-library" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="906435" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.11.6-sources.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6-sources.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="doc" ext="jar" extra-classifier="javadoc" status="no" details="" size="22813840" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.11.6-javadoc.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6-javadoc.jar"/>
+					</artifact>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5564007" time="0" location="/Users/spandanbrahmbhatt/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

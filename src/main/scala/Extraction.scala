@@ -7,6 +7,7 @@ import scala.collection.mutable.{ListBuffer, Map}
 class Extraction {
   var data : Map[Int,Map[String,List[String]]] = _
   val POSTags = List("NN","NNS")
+
   def getName() :String= {
         var nameList = new ListBuffer[String]
         for((k,v) <- data){
@@ -19,79 +20,119 @@ class Extraction {
     }
 
   def getPostition(ner : List[String], tokens : List[String]) = {
-        var posi = new ListBuffer[Int];
+        var posi = new ListBuffer[Int]
         ner.zipWithIndex.foreach{
           case("PERSON", i) => posi+=i
           case _ => None
         }
         var names = new ListBuffer[String]
         posi.foreach(i => {
-          if (posi.contains(i+1)){ names+=(tokens(i)+ " " + tokens(i+1))}
+          if (posi.contains(i+1)){names+=(tokens(i)+ " " + tokens(i+1))
+            posi-=i
+            posi-=(i+1)
+          }
+          else {
+            names+= tokens(i)
+            posi-=i
+          }
         })
         names.toList
     }
 
+  def dataClean() ={
+    data.foreach(i => cleanNN(i._1,i._2))
+    data.foreach(i => combineData(i._1,i._2))
+    data.foreach(i => combineData(i._1,i._2))
+    data.foreach(i => combineNN(i._1,i._2))
+  }
+
+  def combineNN (count: Int, linedata : Map[String,List[String]]) = {
+    var tokens = linedata.get("tokens").get
+    var ner  = linedata.get("ner").get
+    var tags = linedata.get("tags").get
+    var flag = true
+    var a = 0
+    while(flag){
+      if(ner(a).equals("O") && checkNextNN(tags,a)) {
+        tokens = tokens.slice(0,a) ::: List(tokens(a)+ " " + tokens(a+1)) ::: tokens.slice(a+2,tokens.length) ::: Nil
+        ner = ner.slice(0,a) ::: ner.slice(a+1,ner.length) ::: Nil
+        tags = tags.slice(0,a) ::: tags.slice(a+1,tags.length) ::: Nil
+      }
+      if(a==tokens.length-2) {flag=false}
+      a+=1
+    }
+    val newData = Map("tokens" -> tokens, "ner" -> ner, "tags" -> tags)
+    data-=count
+    data(count) = newData
+  }
+
+  def checkNextNN (li :List[String], i : Int ) = {
+    if(li(i+1).equals("NN") && li(i).equals("NN")) true else false
+  }
+
+  def cleanNN (count: Int, linedata : Map[String,List[String]]) = {
+    val tokens = linedata.get("tokens").get
+    val ner  = linedata.get("ner").get
+    var tags = linedata.get("tags").get
+    tags = tags.map(i => if(i.contains("NN")) "NN" else i)
+    val newData = Map("tokens" -> tokens, "ner" -> ner, "tags" -> tags)
+    data-=count
+    data(count) = newData
+  }
+
+  def combineData (count: Int, linedata : Map[String,List[String]]) = {
+    var tokens = linedata.get("tokens").get
+    var ner  = linedata.get("ner").get
+    var tags = linedata.get("tags").get
+    var flag = true
+    var a = 0
+    while(flag){
+      if(checkNextSame(ner,a)) {
+        tokens = tokens.slice(0,a) ::: List(tokens(a)+ " " + tokens(a+1)) ::: tokens.slice(a+2,tokens.length) ::: Nil
+        ner = ner.slice(0,a) ::: ner.slice(a+1,ner.length) ::: Nil
+        tags = tags.slice(0,a) ::: tags.slice(a+1,tags.length) ::: Nil
+      }
+      if(a==tokens.length-2) {flag=false}
+      a+=1
+    }
+    val newData = Map("tokens" -> tokens, "ner" -> ner, "tags" -> tags)
+    data-=count
+    data(count) = newData
+
+  }
+
+  def checkNextSame(li :List[String], i : Int ) = {
+    if(li(i+1).equals(li(i)) && !li(i).equals("O")) true else false
+  }
+
   def extractLineContent(linedata : Map[String,List[String]] ) = {
-    var tokens = collection.mutable.Map() ++ linedata.get("tokens").get.zipWithIndex.map(i => (i._2,i._1)).toMap
-    var ner  = collection.mutable.Map() ++ linedata.get("ner").get.zipWithIndex.map(i => (i._2,i._1)).toMap
-    var tags = collection.mutable.Map() ++ linedata.get("tags").get.zipWithIndex.map(i => (i._2,i._1)).toMap
-    val extractedData = ListBuffer[String]()
-    val orgPositionList = getTokens(ner,"ORGANIZATION")
-    val locPositionList = getTokens(ner,"LOCATION")
-    var datePositionList = getTokens(ner,"DURATION")
-    datePositionList = datePositionList ++ getTokens(ner,"DATE")
-    var orgData = "Company : "
-    var locData = "Location : "
-    var dateData = "Date : "
-    orgPositionList.foreach(i => {
-      i.foreach(j => orgData+=tokens(j) + " ")
-      orgData += " -- "
-    })
-    locPositionList.foreach(i => {
-      i.foreach(j => locData+=tokens(j) + " ")
-      locData += " -- "
-    })
-    datePositionList.foreach(i =>{
-      i.foreach(j => dateData+=tokens(j) + " ")
-      dateData += " -- "
-    })
-    /*val orgPositionFList = orgPositionList.flatten
-    val locPositionFList = locPositionList.flatten
-    val datePositionFList = datePositionList.flatten
-    tokens = tokens.filter(i => !orgPositionFList.contains(i._1))
-    tokens = tokens.filter(i => !locPositionFList.contains(i._1))
-    tokens = tokens.filter(i => !datePositionFList.contains(i._1))
-    ner = ner.filter(i=> !orgPositionFList.contains(i._1))
-    ner = ner.filter(i=> !locPositionFList.contains(i._1))
-    ner = ner.filter(i=> !datePositionFList.contains(i._1))
-    tags = tags.filter(i=> !orgPositionFList.contains(i._1))
-    tags = tags.filter(i=> !locPositionFList.contains(i._1))
-    tags = tags.filter(i=> !datePositionFList.contains(i._1)) */
-    val requiredTags = getTokens(tags,"NN")
-    var nameNounTokensList = ListBuffer[String]()
-    requiredTags.foreach(i => {
-      var tempName = ""
-      i.foreach(j => tempName+=tokens(j) + " ")
-      nameNounTokensList += tempName
-    })
     val cortical = new CorticalExt
-    val nameNounTokensMap = nameNounTokensList.zipWithIndex.map(i => (i._2,i._1)).toMap
-    val categories = nameNounTokensMap.map(i => (i._1,cortical.findCategory(i._2)))
-    extractedData += orgData + " || "
-    extractedData += locData + " || "
-    extractedData += dateData + " || "
-    val designation = "Designation : " + categories.filter(i => i._2.equals("Designation")).keys.map(i => nameNounTokensMap(i)).toList.mkString(" ")
-    val areaOfWork = "Area of Work : " + categories.filter(i => i._2.equals("Area")).keys.map(i => nameNounTokensMap(i)).toList.mkString(" ")
-    extractedData+=designation + " || "
-    extractedData+=areaOfWork + " || "
-    extractedData.toList
+    val tokens = linedata.get("tokens").get
+    val ner  = linedata.get("ner").get
+    val tags = linedata.get("tags").get
+    val res = ListBuffer[(String,String)]()
+    for(a <- 0 until tokens.length ){
+      val token = tokens(a)
+      if(!ner(a).equals("O")){
+        res.append((token,ner(a)))
+      }
+      else {
+        if(!tags(a).equals("NN")){
+          res.append((token,"O"))
+        }
+        else{
+          res.append((token,cortical.findCategory(token)))
+        }
+      }
+    }
+    res.toList
   }
 
   def generateData = {
+    dataClean()
     val genData = data.map(i => extractLineContent(i._2)).toList
     genData
   }
-
 
   def getTokens(map : Map[Int, String], term : String)  = {
     var groupedLocations =  new ListBuffer[List[Int]]()
@@ -110,6 +151,20 @@ class Extraction {
       groupedLocations+=locationGroup.toList
     }
     groupedLocations.toList
+  }
+
+  def getJSON = {
+    val result = generateData
+    var json = "{ "
+    for(a <- 0 until result.length){
+      json+="\"" + (a+1) + "\": [ "
+      result(a).foreach(i => json+= "{\"token\":\"" + i._1 + "\", \"tag\":\"" + i._2 + "\"},")
+      json=json.dropRight(1)
+      json+="],"
+    }
+    json=json.dropRight(1)
+    json+="}"
+    json
   }
 }
 
